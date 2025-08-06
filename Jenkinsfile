@@ -1,7 +1,7 @@
 node {
     stage('Build'){
-        sh 'mvn --version'
-        sh 'docker --version'
+        bat 'mvn --version'
+        bat 'docker --version'
         echo "Build"
     }
     stage('Release'){
