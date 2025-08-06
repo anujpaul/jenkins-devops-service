@@ -1,6 +1,6 @@
 node {
     stage('Build'){
-        sh 'maven --version'
+        sh 'mvn --version'
         sh 'docker --version'
         echo "Build"
     }
