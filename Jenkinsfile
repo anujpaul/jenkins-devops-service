@@ -1,8 +1,10 @@
 node {
     stage('Build'){
+        sh 'maven --version'
+        sh 'docker --version'
         echo "Build"
     }
-    stage('Dev stage'){
-        echo "Dev"
+    stage('Release'){
+        echo "released"
     }
 }
