@@ -1,10 +1,17 @@
-node {
-    stage('Build'){
-        sh 'mvn --version'
-        sh 'docker --version'
-        echo "Build"
+pipeline {
+
+    agent any
+    tools {
+        maven 'myMaven'
     }
-    stage('Release'){
-        echo "released"
+    stages {
+        stage('Build'){
+            sh 'mvn --version'
+            sh 'docker --version'
+            echo "Build"
+        }
+        stage('Release'){
+            echo "released"
+        }
     }
 }
