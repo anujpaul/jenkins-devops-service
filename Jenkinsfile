@@ -3,7 +3,7 @@ pipeline {
     agent any
     tools {
         maven 'myMaven'
-        git 'myGit'
+     //   git 'myGit'
     }
     stages {
         stage('Build'){
