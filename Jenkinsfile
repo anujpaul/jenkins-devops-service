@@ -14,7 +14,7 @@ pipeline {
             sh 'mvn --version'
             sh 'docker --version'
             echo "Build"
-            echo $OPENAI_API_KEY
+            echo "OpenAI key is: ${env.OPENAI_API_KEY}"
             //dsd
             }
         }
